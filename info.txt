@@ -1,0 +1,33 @@
+#instalación de cypress
+1. npm install cypress --save-dev
+#instalar NPX
+2. npm install -g npx
+#Iniciar cypress
+3. npx cypress open
+4. mitigar errores
+  cy.visit('https://temp-mail.org/es/', 
+        {failOnStatusCode: false})
+5.comando para pasar errres internos de paginas
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+  })
+6 it.only("Solo uno", () =>{ solo correra el que tenga el only o los que lo contengan
+7. Selectores
+ID con #
+Atributo va entre [placeholder='Full Name']
+Xpath Instalar npm install -D cypress-xpath y agregar la linea require('cypress-xpath')
+Xpant con varios elementos //span[contains(text(),'Palabra Box')]
+
+8. comando x Consola
+- Correr todas las pruebas x consola node_modules\.bin\cypress run ctr c para pararlo
+- Correr todas las pruebas x navegador npx cypress run  --headed ctr c para pararlo
+- Correr todas las pruebas x navegador especifico npx cypress run  --browser chrome ctr c para pararlo
+- Correr una prueba en especifico x navegador npx cypress run --spec "cypress\e2e\SeccionTwo\ReferenceWindows.cy.js"  --headed
+- Correr una carpeta en especifico npx cypress run --spec "cypress\e2e\SeccionTwo\*"      
+
+9 guias
+- snippets https://code.visualstudio.com/docs/editor/userdefinedsnippets
+Para ingresar desde visual usamos ctrl p y buscamos snippets
+mas el archivo de js
