@@ -31,3 +31,9 @@ Xpant con varios elementos //span[contains(text(),'Palabra Box')]
 - snippets https://code.visualstudio.com/docs/editor/userdefinedsnippets
 Para ingresar desde visual usamos ctrl p y buscamos snippets
 mas el archivo de js
+
+10 Git - Comandos
+- Agregar todos los archivos
+  git init // para iniciar el repositorio
+  git add . //
+  git commant -m "comentario del despliegue"
